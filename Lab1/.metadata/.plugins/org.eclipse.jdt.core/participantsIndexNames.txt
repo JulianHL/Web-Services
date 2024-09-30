@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\juldh\Desktop\Desktop\Web Services\Lab1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\705739128.index
+\WebHelloWorldProject\src\main\java
+C:\Users\juldh\Desktop\Desktop\Web Services\Lab1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3667110742.index
+\test1\src\main\java

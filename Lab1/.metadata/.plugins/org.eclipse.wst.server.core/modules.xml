@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:WebBillingProject" serverId="Payara at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebHelloWorldProject" serverId="Payara at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebCourseProject" serverId="Payara at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:test1" serverId="Payara at localhost"/>
+</modules>

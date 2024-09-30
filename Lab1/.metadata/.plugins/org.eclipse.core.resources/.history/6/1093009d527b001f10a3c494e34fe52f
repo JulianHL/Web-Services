@@ -1,0 +1,7 @@
+package webBilling;
+
+public class Client {
+
+	private String client_Lname;
+	private double clent_Fname;
+}

@@ -1,0 +1,6 @@
+#GlassFish 3
+#Fri Sep 27 21:55:01 EDT 2024
+org.eclipse.jst.jee.server\:WebBillingProject=C\:\\Users\\juldh\\glassfish7\\glassfish\\domains\\domain1\\eclipseApps\\WebBillingProject
+org.eclipse.jst.jee.server\:WebCourseProject=C\:\\Users\\juldh\\glassfish7\\glassfish\\domains\\domain1\\eclipseApps\\WebCourseProject
+org.eclipse.jst.jee.server\:WebHelloWorldProject=C\:\\Users\\juldh\\glassfish7\\glassfish\\domains\\domain1\\eclipseApps\\WebHelloWorldProject
+org.eclipse.jst.jee.server\:test1=C\:\\Users\\juldh\\glassfish7\\glassfish\\domains\\domain1\\eclipseApps\\test1

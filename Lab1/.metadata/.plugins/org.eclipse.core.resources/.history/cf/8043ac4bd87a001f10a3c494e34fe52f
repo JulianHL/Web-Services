@@ -1,0 +1,59 @@
+package webHelloWorld;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Scanner;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class WebHelloWorld
+ */
+@WebServlet("/WebHelloWorld")
+public class WebHelloWorld extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    /**
+     * Default constructor. 
+     */
+    public WebHelloWorld() {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		InputStream inputStream = getClass().getClassLoader().getResourceAsStream("University.in");
+		Scanner inFile = new Scanner(inputStream);
+		
+		University [] universities = new University[2];
+		
+		for (int i = 0; i < universities.length; i++) {
+			universities[i] = new University(inFile.next(), inFile.nextInt(), inFile.nextInt());
+		}
+		
+		inFile.close();
+		
+response.setContentType("text/html");
+		
+		PrintStream out = new PrintStream(response.getOutputStream());
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

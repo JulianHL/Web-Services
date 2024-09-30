@@ -1,0 +1,9 @@
+package webBilling;
+
+public class Billing {
+	
+	private Client client;
+	private Product product;
+	private int quantity;
+
+}

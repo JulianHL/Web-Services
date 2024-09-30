@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.ui.internal.views.markers.CachedMarkerBuilderai.deepcode.parts.myProblemsView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<filterGroups andFilters\="false" markerLimit\="100" markerLimitEnabled\="true">\r\n<filterGroup IMemento.internal.id\="USER1727216947903" enabled\="true" filterLimit\="0" name\="DeepCodeMarkersFilter" scope\="0" workingSet\="Aggregate for window 1727214459475">\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.severityAndDescriptionField" containsModifier\="CONTAINS" containsText\="" selectedSeverities\="7"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.markerType"/>\r\n</filterGroup>\r\n</filterGroups>
+platformState=1743951502777648
+quickStart=false
+tipsAndTricks=true
