@@ -1,7 +1,0 @@
-package webBilling;
-
-public class Product {
-
-	private String product_name;
-	private double product_price;
-}
