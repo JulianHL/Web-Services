@@ -22,26 +22,26 @@ public class App
         WebTarget target = client.target(url);
         
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter x: ");
+        System.out.print("Please, enter x: ");
         double x = input.nextDouble();
-        System.out.println("Enter y: ");
+        System.out.print("Please, enter y: ");
         double y = input.nextDouble();
-        System.out.println("Enter z: ");
+        System.out.print("Please, enter z: ");
         double z = input.nextDouble();
         
-        System.out.println("Consume MathOp for x: " + x + " y: " + y + " z: " + z+":\n");
+        System.out.println("\n--- Consume MathOp for x: " + x + " y: " + y + " z: " + z+": ---\n");
         String response = target.queryParam("x", x).queryParam("y", y).queryParam("z", z).request().accept(MediaType.TEXT_HTML).get(String.class);
 		System.out.println(response);
 		
-		System.out.println("\nConsume MathOp/listArray:\n");
+		System.out.println("\n--- Consume MathOp/listArray: ---\n");
 		response = target.path("/listArray").request().accept(MediaType.TEXT_HTML).get(String.class);
 		System.out.println(response);
 		
 		
-		System.out.println("\nConsume MathOp/OpHashMap/{x}:\n");
-		System.out.println("Enter a number to search into the HashMap: ");
+		System.out.println("\n--- Consume MathOp/OpHashMap/{x}: ---\n");
+		System.out.print("Enter a number to search into the HashMap: ");
 		response = target.path("/OpHashMap/"+input.nextDouble()).request().accept(MediaType.APPLICATION_JSON).get(String.class);
-		System.out.println(response);
+		System.out.println("\n"+response);
 		input.close();
 		
 

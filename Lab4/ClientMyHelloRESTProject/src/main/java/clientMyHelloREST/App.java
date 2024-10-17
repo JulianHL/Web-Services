@@ -18,7 +18,7 @@ public class App
 		Client client = ClientBuilder.newClient(config);
 		WebTarget target = client.target(url);
 		
-		System.out.println("Json consume:");
+		System.out.println("JSON consume:");
 		String response = target.request()
 								.accept(MediaType.APPLICATION_JSON)
 								.get(String.class);
