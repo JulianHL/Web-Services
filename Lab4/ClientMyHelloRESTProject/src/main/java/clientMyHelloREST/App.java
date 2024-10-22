@@ -12,13 +12,13 @@ public class App
 {
     public static void main( String[] args )
     {
-		String url = "http://localhost:8080/WebHelloWorldRESTProject/rest/HiHi";
+		String url = "https://api.zippopotam.us";
 		
 		ClientConfig config = new ClientConfig();
 		Client client = ClientBuilder.newClient(config);
 		WebTarget target = client.target(url);
 		
-		System.out.println("JSON consume:");
+		/*System.out.println("JSON consume:");
 		String response = target.request()
 								.accept(MediaType.APPLICATION_JSON)
 								.get(String.class);
@@ -59,6 +59,9 @@ public class App
 						 .get(String.class);
 		Input.close();
 		System.out.println("\n"+response);
+		*/
+		
+		System.out.print(target.path("/us/"+"90210").request().accept(MediaType.APPLICATION_JSON).get(String.class));
 		
 		
 		
